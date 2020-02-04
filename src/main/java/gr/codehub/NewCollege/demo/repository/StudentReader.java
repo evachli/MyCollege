@@ -13,6 +13,7 @@ public class StudentReader {
         List<Student> students = new ArrayList<>();
         for (int i=1; i<=10; i++){
             Student s = readStudentData();
+            s.setId(i);
             students.add(s);
         }
         return students;

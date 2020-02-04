@@ -3,6 +3,8 @@ package gr.codehub.NewCollege.demo.repository;
 import gr.codehub.NewCollege.demo.model.College;
 import gr.codehub.NewCollege.demo.model.Course;
 import gr.codehub.NewCollege.demo.model.Student;
+import gr.codehub.NewCollege.demo.model.Module;
+import gr.codehub.NewCollege.demo.repository.ModuleReader;
 
 import java.util.List;
 
@@ -19,7 +21,7 @@ public class RepositoryReader {
         List<Course> courses = courseReader.readAllCoursesData();
 
         college.setCourses(courses);
-        college.setStudents(students);
+
         //college.getCourses().addAll(courses);
         return college;
     }

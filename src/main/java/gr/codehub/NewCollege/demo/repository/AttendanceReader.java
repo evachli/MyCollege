@@ -4,10 +4,15 @@ import gr.codehub.NewCollege.demo.controller.Registry;
 import gr.codehub.NewCollege.demo.model.*;
 import gr.codehub.NewCollege.demo.model.Module;
 import gr.codehub.NewCollege.demo.util.Util;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
+@NoArgsConstructor
 public class AttendanceReader {
     private Module module;
 
